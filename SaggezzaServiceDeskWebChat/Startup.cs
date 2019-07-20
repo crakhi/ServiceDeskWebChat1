@@ -42,8 +42,8 @@ namespace SaggezzaServiceDeskWebChat
             .AddCookie()
             .AddGoogle(options =>
             {
-                options.ClientId = Configuration["Authentication:Google:ClientId"];
-                options.ClientSecret = Configuration["Authentication:Google:ClientSecret"];
+                options.ClientId = Configuration["ClientId"];
+                options.ClientSecret = Configuration["ClientSecret"];
             });
 
 
