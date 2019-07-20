@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "";
+    ViewData["Title"] = "Home Page";
+}
+
+
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="webchat" role="main"></div>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+    <script>
+        window.WebChat.renderWebChat(
+            {
+                directLine: window.WebChat.createDirectLine({
+                    token: 'Bg_uf1m3oOI.LqD3ef0uTHmollzaeZWXLXwurzrT6ISTP2Kj_Y63wII'
+                }),
+                userID: 'Saggezza',
+                username: 'Web Chat User',
+                locale: 'en-US',
+                botAvatarInitials: 'WC',
+                userAvatarInitials: 'WW'
+            },
+            document.getElementById('webchat')
+        );
+    </script>
+</body>
+</html>
