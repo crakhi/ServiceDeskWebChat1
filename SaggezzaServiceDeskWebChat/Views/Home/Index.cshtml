@@ -1,28 +1,49 @@
 ﻿@{
     Layout = "";
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Login Page";
 }
 
 
 <!DOCTYPE html>
 <html>
+
+<head>
+    <title>Saggezza - Chat Bot</title>
+    <link rel="icon" href="~/Images/cropped-favicon_saggezza-32x32.png" sizes="32x32">
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/Login_Page_Layout.css">
+    <link rel="stylesheet" href="~/css/Login_Page.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+</head>
+<!--Coded with love by Mutiullah Samim-->
 <body>
-    <div id="webchat" role="main"></div>
-    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+    <div class="container h-100">
+        <div class="d-flex justify-content-center h-100">
+            <div class="user_card">
+                <div class="d-flex justify-content-center">
+                    <div class="brand_logo_container" id="brand_logo_container">
+                        <img src="./Images/logo_saggezza.png" class="brand_logo" alt="Logo">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <h3>Welcome to Service Desk</h4>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <h6>Please sign in to continue</h4>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button class="loginBtn loginBtn--google" id="loginBtn">
+                        Login with Google
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
     <script>
-        window.WebChat.renderWebChat(
-            {
-                directLine: window.WebChat.createDirectLine({
-                    token: 'Bg_uf1m3oOI.LqD3ef0uTHmollzaeZWXLXwurzrT6ISTP2Kj_Y63wII'
-                }),
-                userID: 'Saggezza',
-                username: 'Web Chat User',
-                locale: 'en-US',
-                botAvatarInitials: 'WC',
-                userAvatarInitials: 'WW'
-            },
-            document.getElementById('webchat')
-        );
-    </script>
+        $("#loginBtn").click(function () {
+            window.location.pathname = "/Home/ChatBot";
+        });
+        </script>   
 </body>
 </html>

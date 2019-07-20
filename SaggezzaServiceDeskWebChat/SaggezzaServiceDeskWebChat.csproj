@@ -10,6 +10,16 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="wwwroot\css\bootstrap.min.css" />
+    <None Include="wwwroot\css\Login_Page.css" />
+    <None Include="wwwroot\css\Login_Page_Layout.css" />
+    <None Include="wwwroot\Images\logo_saggezza.png" />
+    <None Include="wwwroot\Images\Saggezza_background.png" />
   </ItemGroup>
 
 </Project>
